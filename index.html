@@ -1,66 +1,63 @@
-<html>
-  <meta name="viewport" content="width=device-width, intial-scale=1">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        /* Create four equal columns that floats next to each other */
-        .column {
-          float: left;
-          width: 50%;
-          padding: 10px;
-          height: 400px; 
-        }
-
-       .imgcontainer{
-            text-align: center;
-            margin: 24px 0 12px 0;
-       }   
-
-       .avatar{
-        height: 270px;
-        width: 25%;
-        border-radius: 60%;
-       }
-
-       .video{
-        position:relative;
-        left: 450px;
-
-       }
+    
+      body{
+        background-color:powderblue;
+      }
       
     </style>
-    <body style="background-color:powderblue;">
-        <h1> Hello, I am </h1>
-        <div class="row">
-            <div class="column" style="background-color:rgb(105, 134, 169);">
-              <h2>Ming Jun</h2>
-              <p>Sophomore at School of Computing and Information Systems</p>
-              <div class ='imgcontainer'>
-                <img src="mingjun.jpeg"alt="Avatar"class="avatar">
+  </head>
+  <body>
+    <div class="container-fluid ">
+      <div class="row">
+        <h5>Hello I am</h5>
+      </div>
+      
+    </div>
+    
 
-              </div>
-            </div>
-            <div class="column" style="background-color:rgb(30, 212, 109);">
-              <h2>totally sober</h2>
-              <p>yes i am totally sober in this photo</p>
-              <div class ='imgcontainer'>
-                <img src="mingjun2.jpg"alt="Avatar"class="avatar">
-              </div>
-            </div>
-           
+    <div class="container-fluid ">
+      <div class="row">
+        <p> Sophomore at Singapore Management University majoring in Information systems </p>
+      </div>
+      
+    </div>
+   
+    
+    <div class="container-fluid bg-warning">
+      <div class="row">
+        <div class="col-4 bg-success">
+          <p> Ming Jun </p>
+          <img src="mingjun.jpeg"  class = "rounded-circle rounded mx-auto d-block" width ="100px"  height = "200px" alt="">
         </div>
-
-        <h3> I do run occasionally , always running out of money </h3>
-        <div class="video">
-         <iframe width="560" height="315"  src="https://www.youtube.com/embed/HlBYdiXdUa8?autoplay=1&mute=1" ></iframe> 
+        <div class="col-4 bg-info">
+          <p> am totally sober </p>
+          <img src="mingjun2.jpg"  class = "rounded-circle rounded mx-auto d-block" width ="100px"  height = "200px" alt="">
         </div>
-       
-    </body>
+        <div class="col-4 bg-success">
+          <p> am confident </p>
+          <img src="mingjun3.jpg"  class = "rounded-circle rounded mx-auto d-block" width ="100px"  height = "200px" alt="">
+        </div>
+      
+      </div>
+      
+    </div>
 
- 
+    
 
 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+   
+  </body>
 </html>
