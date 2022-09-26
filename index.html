@@ -14,10 +14,7 @@
         background-color:powderblue;
       }
 
-      #cel{
-        margin:auto;
-      }
-      
+    
     </style>
   </head>
   <body>
@@ -56,14 +53,38 @@
 
     </div>
 
-    <div class = "container mx-auto">
-      <div class="row">
+    <div class = "container-sm mx-auto mt-5">
+      <div class="row ">
         <div class="col-12">
-          <img src="cel.jpg" id="cel" width ="200px"  height = "200px" alt="">
+          <img src="cel.jpg" class = "rounded mx-auto d-block " width ="300px"  height = "300px" alt="">
         </div>
+        <div style="text-align:center;"> 
+            Write a short message to her!!
+            <br>
+            <input type = "text" id = "addlist" class ="mt-3"> <button type="button" id="btn" class="btn btn-primary">Send message </button>
+            <ul id="parent" class="m-0">
+
+
+            </ul>
+        </div>
+        
         
     </div>
 
+    <script>
+        const item = document.getElementById('addlist')
+        console.log(item)
+        const addelem = document.getElementById('btn');
+        addelem.addEventListener('click',updateitems)
+
+        function updateitems(){
+            const parent = document.getElementById('parent')
+            const child = document.createElement('li')
+            const name = document.createTextNode(item.value)
+            child.appendChild(name);
+            parent.appendChild(child)
+        }  
+    </script>
     
 
 
