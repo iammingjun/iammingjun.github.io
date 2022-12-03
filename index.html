@@ -8,88 +8,142 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <style>
-    
-      body{
-        background-color:powderblue;
-      }
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-    
-    </style>
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
   </head>
   <body>
-    <div class="container-fluid ">
-      <div class="row">
-        <h5>Hello I am</h5>
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <div class="container">
+          <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Ming Jun</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                      <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#resume" class="nav-link"><span data-hover="Resume">Education</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+                  </li>
+              </ul>
+
+              <ul class="navbar-nav ml-lg-auto">
+                  <div class="ml-lg-4">
+                    <div class="color-mode d-lg-flex justify-content-center align-items-center">
+                      <i class="color-mode-icon"></i>
+                      Color mode
+                    </div>
+                  </div>
+              </ul>
+          </div>
       </div>
-      
-    </div>
-    
+  </nav>
+  
+  <!-- About -->
+  <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                <div class="about-text">
+                    <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
+                    <h1 class="animated animated-text">
+                        <span class="mr-2">Hey folks, I'm</span>
+                            <div class="animated-info">
+                                <span class="animated-item">Ming Jun</span>
+                                <span class="animated-item">Passionate</span>
+                                <span class="animated-item">Cheerful</span>
+                            </div>
+                    </h1>
 
-    <div class="container-fluid ">
+                    <p>Second year student at Singapore Managment University majoring in Information Systems</p>
+                    
+                    <div class="custom-btn-group mt-4">
+                      <a href="#" class="btn mr-lg-2 custom-btn"><i class='bi bi-telephone'></i> Contact me</a>
+                      <!-- <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get a free quote</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-12 col-12">
+                <div class="about-image svg">
+                    <img src="images/undraw/undraw_software_engineer_lvl5.svg" class="img-fluid" alt="svg image">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Education -->
+<section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+  <div class="container">
       <div class="row">
-        <p> Sophomore at Singapore Management University majoring in Information systems </p>
-      </div>
-      
-    </div>
-   
-    
-    <div class="container-fluid bg-warning">
-      <div class="row">
-        <div class="col-4 bg-success">
-          <p> Ming Jun </p>
-          <img src="mingjun.jpeg"  class = "rounded-circle rounded mx-auto d-block" width ="100px"  height = "200px" alt="">
-        </div>
-        <div class="col-4 bg-info">
-          <p> totally sober </p>
-          <img src="mingjun2.jpg"  class = "rounded-circle rounded mx-auto d-block" width ="100px"  height = "200px" alt="">
-        </div>
-        <div class="col-4 bg-success">
-          <p> confident </p>
-          <img src="mingjun3.jpg"  class = "rounded-circle rounded mx-auto d-block" width ="100px"  height = "200px" alt="">
-        </div>
-      
-      </div>
 
-    </div>
-
-    <div class = "container-sm mx-auto mt-5">
-      <div class="row ">
-        <div class="col-12">
-          <img src="smu.png" class = "rounded mx-auto d-block " width ="300px"  height = "300px" alt="">
-        </div>
-        <div style="text-align:center;"> 
-            Pray for your success
-            <br>
-            <input type = "text" id = "addlist" class ="mt-3"> <button type="button" id="btn" class="btn btn-primary">Send message </button>
-            <ul id="parent" class="m-0">
-
-
-            </ul>
-        </div>
         
-        
-    </div>
 
-    <script>
-        const item = document.getElementById('addlist')
-        console.log(item)
-        const addelem = document.getElementById('btn');
-        addelem.addEventListener('click',updateitems)
+          <div class="col-lg-6 col-12">
+            <h2 class="mb-4 mobile-mt-2">Educations</h2>
 
-        function updateitems(){
-            const parent = document.getElementById('parent')
-            const child = document.createElement('li')
-            const name = document.createTextNode(item.value)
-            child.appendChild(name);
-            parent.appendChild(child)
-        }  
-    </script>
-    
+              <div class="timeline">
+                  <div class="timeline-wrapper">
+                       <div class="timeline-yr">
+                            <span>2019</span>
+                       </div>
+                       <div class="timeline-info">
+                            <h3><span>Temasek Polytechnic</span></h3>
+                            <p>Diploma in Business specialising in Human Resource and Finance </p>
+                       </div>
+                  </div>
+
+                  <div class="timeline-wrapper">
+                      <div class="timeline-yr">
+                          <span>2021</span>
+                      </div>
+                      <div class="timeline-info">
+                        <h3><span>Singapore Mangement University</span></h3>
+                        <p>Bachelor of Science(Informations Systems_</p>
+                      </div>
+                  </div>
+                  
+                 
+              </div>
+          </div>
+          
+      </div>
+  </div>
+</section>
+
+
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
 
    
   </body>
